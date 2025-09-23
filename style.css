@@ -32,18 +32,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.orbita {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center;
-    width: 100%;
-    height: 100%;
-    border: 1px dashed rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    animation: orbit 100s infinite linear;
-}
-
 .pianeta {
     position: absolute;
     top: 50%;
@@ -88,7 +76,6 @@ body {
     margin-left: 350px;
 }
 
-/* Animazioni */
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -100,7 +87,7 @@ body {
 
 @keyframes orbit {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(270deg);
     }
     100% {
         transform: rotate(360deg);
